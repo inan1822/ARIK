@@ -24,7 +24,7 @@ export const hero = {
   badge: 'Best viewed in Netscape Navigator 4.0, 800x600',
   construction: 'האתר בבנייה. כמו אריק, גם הוא מתפתח כל הזמן.',
   photo: {
-    src: '/arik/arik-01.jpg',
+    src: 'arik/arik-01.jpg',
     alt: 'אריק מצביע',
     caption: 'אריק. התמונה הרשמית.',
   } as Photo,
@@ -32,42 +32,42 @@ export const hero = {
 
 export const gallery: Photo[] = [
   {
-    src: '/arik/arik-15.jpg',
+    src: 'arik/arik-15.jpg',
     alt: 'אריק עומד',
     caption: 'אריק עומד.',
   },
   {
-    src: '/arik/arik-04.jpg',
+    src: 'arik/arik-04.jpg',
     alt: 'אריק בחוץ',
     caption: 'אריק בחוץ. שימו לב לשמיים ברקע.',
   },
   {
-    src: '/arik/arik-09.jpg',
+    src: 'arik/arik-09.jpg',
     alt: 'אריק מחייך',
     caption: 'אריק מחייך. הוא כנראה נהנה כאן.',
   },
   {
-    src: '/arik/arik-13.jpg',
+    src: 'arik/arik-13.jpg',
     alt: 'אריק יושב בפנים',
     caption: 'אריק יושב בפנים.',
   },
   {
-    src: '/arik/arik-19.jpg',
+    src: 'arik/arik-19.jpg',
     alt: 'אריק יושב בחוץ',
     caption: 'אריק יושב בחוץ.',
   },
   {
-    src: '/arik/arik-18.jpg',
+    src: 'arik/arik-18.jpg',
     alt: 'אריק ליד חלון',
     caption: 'אריק ליד חלון.',
   },
   {
-    src: '/arik/arik-05.jpg',
+    src: 'arik/arik-05.jpg',
     alt: 'אריק על החוף',
     caption: 'אריק על החוף. רובו.',
   },
   {
-    src: '/arik/arik-20.jpg',
+    src: 'arik/arik-20.jpg',
     alt: 'אריק והשיער שלו',
     caption: 'השיער של אריק. צומח ישירות מהראש שלו.',
     isNew: true,
@@ -88,7 +88,7 @@ export const quiz = {
     text: 'אריק עצוב בגללך',
     subtext: 'הדרך היחידה לתקן: לסיים את השאלון נכון.',
     photo: {
-      src: '/arik/arik-17.jpg',
+      src: 'arik/arik-17.jpg',
       alt: 'אריק עצוב',
       caption: '',
     } as Photo,
@@ -109,7 +109,7 @@ export const quiz = {
       ],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-14.jpg',
+        src: 'arik/arik-14.jpg',
         alt: 'אריק בלילה',
         caption: 'פרס: אריק בלילה.',
       },
@@ -119,7 +119,7 @@ export const quiz = {
       options: ['בגדים', 'ביגוד', 'פריטי לבוש', 'כל התשובות'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-12.jpg',
+        src: 'arik/arik-12.jpg',
         alt: 'אריק לובש בגדים',
         caption: 'פרס: אריק לובש בגדים.',
       },
@@ -129,7 +129,7 @@ export const quiz = {
       options: ['בן אדם', 'אנושי', 'בנאדם', 'כן'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-03.jpg',
+        src: 'arik/arik-03.jpg',
         alt: 'הפנים של אריק',
         caption: 'פרס: הפנים של אריק, מקרוב.',
       },
@@ -139,7 +139,7 @@ export const quiz = {
       options: ['מזון', 'אוכל', 'דברים אכילים', 'כל התשובות'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-11.jpg',
+        src: 'arik/arik-11.jpg',
         alt: 'אריק אוכל',
         caption: 'פרס: אריק מכניס מזון לפה.',
       },
@@ -149,7 +149,7 @@ export const quiz = {
       options: ['בבית', 'במבנה', 'בתוך חדרים', 'כל התשובות'],
       correct: [0, 2],
       reward: {
-        src: '/arik/arik-02.jpg',
+        src: 'arik/arik-02.jpg',
         alt: 'אריק במטבח',
         caption: 'פרס: אריק בתוך מבנה.',
       },
@@ -159,7 +159,7 @@ export const quiz = {
       options: ['בעיניים', 'בשתי העיניים', 'בעיניים שלו', 'כן'],
       correct: [0, 2],
       reward: {
-        src: '/arik/arik-08.jpg',
+        src: 'arik/arik-08.jpg',
         alt: 'העיניים של אריק',
         caption: 'פרס: העיניים של אריק. שתיהן.',
       },
@@ -169,7 +169,7 @@ export const quiz = {
       options: ['דברים', 'פעילויות', 'מה שמתחשק לו', 'כל התשובות'],
       correct: [0, 1],
       reward: {
-        src: '/arik/arik-10.jpg',
+        src: 'arik/arik-10.jpg',
         alt: 'אריק בערב',
         caption: 'פרס: אריק בערב, עושה דברים.',
       },
@@ -179,7 +179,7 @@ export const quiz = {
       options: ['הולך', 'נוסע', 'מזיז את הרגליים', 'כן'],
       correct: [2],
       reward: {
-        src: '/arik/arik-22.jpg',
+        src: 'arik/arik-22.jpg',
         alt: 'אריק בתחבורה ציבורית',
         caption: 'פרס: אריק בדרך ממקום למקום.',
       },
@@ -189,7 +189,7 @@ export const quiz = {
       options: ['אחד', '1', 'בדיוק אחד', 'שניים'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-01.jpg',
+        src: 'arik/arik-01.jpg',
         alt: 'אריק מצביע',
         caption: 'פרס: אריק מצביע עליך.',
       },
@@ -199,7 +199,7 @@ export const quiz = {
       options: ['לא רואה', 'נמצא בחושך', 'מחכה לאור', 'זורח'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-16.jpg',
+        src: 'arik/arik-16.jpg',
         alt: 'אריק בחושך',
         caption: 'פרס: אריק בחושך. הוא שם, תאמינו.',
       },
@@ -209,7 +209,7 @@ export const quiz = {
       options: ['יושב', 'צופה', 'נמצא', 'מקרין את הסרט'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-06.jpg',
+        src: 'arik/arik-06.jpg',
         alt: 'אריק בקולנוע',
         caption: 'פרס: אריק בקולנוע, יושב וצופה.',
       },
@@ -219,7 +219,7 @@ export const quiz = {
       options: ['עם בני אדם', 'עם אנשים', 'עם אחרים', 'עם דמויות היסטוריות'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-23.jpg',
+        src: 'arik/arik-23.jpg',
         alt: 'אריק ובן אדם נוסף',
         caption: 'פרס: אריק מבלה עם בן אדם.',
       },
@@ -229,7 +229,7 @@ export const quiz = {
       options: ['הוא לא רואה', 'נהיה חושך', 'כלום מיוחד', 'האורות בבית נכבים'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-24.jpg',
+        src: 'arik/arik-24.jpg',
         alt: 'אריק עוצם עיניים',
         caption: 'פרס: אריק עוצם עיניים. שימו לב לדיוק.',
       },
@@ -239,7 +239,7 @@ export const quiz = {
       options: ['כשהוא לא עומד', 'כשיש כיסא', 'כשמתחשק לו', 'אף פעם'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-07.jpg',
+        src: 'arik/arik-07.jpg',
         alt: 'אריק יושב בקולנוע',
         caption: 'פרס: אריק יושב. יש כיסא.',
       },
@@ -249,7 +249,7 @@ export const quiz = {
       options: ['מחייך', 'מדבר', 'אוכל', 'כל התשובות'],
       correct: [0, 1, 2],
       reward: {
-        src: '/arik/arik-21.jpg',
+        src: 'arik/arik-21.jpg',
         alt: 'אריק מחייך',
         caption: 'פרס: אריק משתמש בפה כדי לחייך.',
       },
@@ -294,22 +294,22 @@ export const facts = {
   ],
   photos: [
     {
-      src: '/arik/arik-06.jpg',
+      src: 'arik/arik-06.jpg',
       alt: 'אריק בקולנוע',
       caption: 'אריק בקולנוע, עם בני אדם אחרים.',
     },
     {
-      src: '/arik/arik-07.jpg',
+      src: 'arik/arik-07.jpg',
       alt: 'אריק עדיין בקולנוע',
       caption: 'עוד תמונה מהקולנוע. אריק עדיין שם.',
     },
     {
-      src: '/arik/arik-17.jpg',
+      src: 'arik/arik-17.jpg',
       alt: 'אריק עוצם עיניים',
       caption: 'לפעמים אריק עוצם עיניים. חזק.',
     },
     {
-      src: '/arik/arik-24.jpg',
+      src: 'arik/arik-24.jpg',
       alt: 'אריק ממצמץ',
       caption: 'אריק ממצמץ. בשתי העיניים, בו זמנית.',
     },
@@ -335,24 +335,24 @@ export const contact = {
     text: 'דיי אריק עייף!!',
     subtext: 'אריק קרא מספיק מיילים להיום.',
     photo: {
-      src: '/arik/arik-19.jpg',
+      src: 'arik/arik-19.jpg',
       alt: 'אריק עייף',
       caption: '',
     } as Photo,
   },
   photos: [
     {
-      src: '/arik/arik-21.jpg',
+      src: 'arik/arik-21.jpg',
       alt: 'אריק מוכן לקבל מיילים',
       caption: 'אריק, מוכן לקבל מיילים.',
     },
     {
-      src: '/arik/arik-23.jpg',
+      src: 'arik/arik-23.jpg',
       alt: 'אריק ממתין',
       caption: 'אריק ממתין לתגובה.',
     },
     {
-      src: '/arik/arik-16.jpg',
+      src: 'arik/arik-16.jpg',
       alt: 'תמונה של אריק',
       caption: 'תמונה אמיתית של אריק.',
     },
