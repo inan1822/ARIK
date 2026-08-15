@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "arik-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "C:\\FULLSTACK\\WEBS\\ARIK\\CODE",
+      "port": 5173
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# dependencies / build
+CODE/node_modules/
+CODE/dist/
+
+# local source material (photos already live in CODE/public/arik)
+UI/
+
+# editor/os noise
+.DS_Store
+Thumbs.db
