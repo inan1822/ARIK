@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { quiz, type Photo } from '../content'
+
+const SAD_MS = 5_000
 
 export default function Quiz() {
   const total = quiz.questions.length
@@ -9,8 +11,10 @@ export default function Quiz() {
   const [answered, setAnswered] = useState(false)
   const [wrong, setWrong] = useState(false)
   const [mistakes, setMistakes] = useState(0)
+  const [sadVisible, setSadVisible] = useState(false)
   const [rewards, setRewards] = useState<Photo[]>([])
   const [done, setDone] = useState(false)
+  const sadTimer = useRef<number | null>(null)
 
   const current = quiz.questions[index]
   const isLast = index === total - 1
@@ -29,6 +33,21 @@ export default function Quiz() {
     }
   }, [mistakes, punishing])
 
+  // התמונה של אריק העצוב קופצת לכל טעות (מהשנייה והלאה) ויורדת לבד
+  // אחרי 5 שניות. טעות נוספת מקפיצה אותה מחדש.
+  function showSad() {
+    setSadVisible(true)
+    if (sadTimer.current !== null) clearTimeout(sadTimer.current)
+    sadTimer.current = window.setTimeout(() => setSadVisible(false), SAD_MS)
+  }
+
+  useEffect(
+    () => () => {
+      if (sadTimer.current !== null) clearTimeout(sadTimer.current)
+    },
+    [],
+  )
+
   function check() {
     if (selected === null || answered) return
     if (current.correct.includes(selected)) {
@@ -36,7 +55,9 @@ export default function Quiz() {
       setWrong(false)
       setRewards((prev) => [...prev, current.reward])
     } else {
-      setMistakes((m) => m + 1)
+      const n = mistakes + 1
+      setMistakes(n)
+      if (n >= 2) showSad()
       setWrong(true)
       setSelected(null)
     }
@@ -60,6 +81,8 @@ export default function Quiz() {
     setAnswered(false)
     setWrong(false)
     setMistakes(0)
+    setSadVisible(false)
+    if (sadTimer.current !== null) clearTimeout(sadTimer.current)
     setRewards([])
     setDone(false)
   }
@@ -78,7 +101,7 @@ export default function Quiz() {
         </svg>
       )}
 
-      {mistakes >= 2 &&
+      {sadVisible &&
         punishing &&
         createPortal(
           <div className="sad-overlay" aria-hidden="true">
