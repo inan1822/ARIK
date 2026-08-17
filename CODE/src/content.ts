@@ -187,7 +187,7 @@ export const quiz = {
     {
       question: 'כמה אריק יש?',
       options: ['אחד', '1', 'בדיוק אחד', 'שניים'],
-      correct: [0, 1, 2],
+      correct: [0, 1],
       reward: {
         src: 'arik/arik-01.jpg',
         alt: 'אריק מצביע',
@@ -197,7 +197,7 @@ export const quiz = {
     {
       question: 'מה אריק עושה בחושך?',
       options: ['לא רואה', 'נמצא בחושך', 'מחכה לאור', 'זורח'],
-      correct: [0, 1, 2],
+      correct: [0, 1],
       reward: {
         src: 'arik/arik-16.jpg',
         alt: 'אריק בחושך',
@@ -207,7 +207,7 @@ export const quiz = {
     {
       question: 'כשאריק הולך לקולנוע, מה הוא עושה שם?',
       options: ['יושב', 'צופה', 'נמצא', 'מקרין את הסרט'],
-      correct: [0, 1, 2],
+      correct: [0, 1],
       reward: {
         src: 'arik/arik-06.jpg',
         alt: 'אריק בקולנוע',
@@ -217,7 +217,7 @@ export const quiz = {
     {
       question: 'עם מי אריק מבלה?',
       options: ['עם בני אדם', 'עם אנשים', 'עם אחרים', 'עם דמויות היסטוריות'],
-      correct: [0, 1, 2],
+      correct: [0, 1],
       reward: {
         src: 'arik/arik-23.jpg',
         alt: 'אריק ובן אדם נוסף',
@@ -227,7 +227,7 @@ export const quiz = {
     {
       question: 'מה קורה כשאריק עוצם עיניים?',
       options: ['הוא לא רואה', 'נהיה חושך', 'כלום מיוחד', 'האורות בבית נכבים'],
-      correct: [0, 1, 2],
+      correct: [1],
       reward: {
         src: 'arik/arik-24.jpg',
         alt: 'אריק עוצם עיניים',
@@ -237,7 +237,7 @@ export const quiz = {
     {
       question: 'מתי אריק יושב?',
       options: ['כשהוא לא עומד', 'כשיש כיסא', 'כשמתחשק לו', 'אף פעם'],
-      correct: [0, 1, 2],
+      correct: [1, 2],
       reward: {
         src: 'arik/arik-07.jpg',
         alt: 'אריק יושב בקולנוע',
@@ -247,7 +247,7 @@ export const quiz = {
     {
       question: 'מה אריק עושה עם הפה?',
       options: ['מחייך', 'מדבר', 'אוכל', 'כל התשובות'],
-      correct: [0, 1, 2],
+      correct: [0],
       reward: {
         src: 'arik/arik-21.jpg',
         alt: 'אריק מחייך',
